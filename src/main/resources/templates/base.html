@@ -1,0 +1,16 @@
+<!--Making parent fragment-->
+<div class= "parent-fragment" th:fragment="Parent(content)">
+    <h1>This is  parent fragment</h1>
+    <p>Spring Boot is a framework that simplifies Spring application development by providing auto-configuration, embedded servers, and minimal setup. It is built on top of the Spring Framework,
+        which offers a comprehensive infrastructure for enterprise Java applications. One of its key features is Dependency Injection, which helps manage object dependencies efficiently. Spring Boot is widely used for building microservices, allowing developers to create scalable and independent services. It also supports REST API development with minimal configuration.
+        With built-in security features, it enables authentication and authorization with ease. The framework promotes configuration using annotations instead of XML, making development faster. Spring MVC is integrated for handling web applications, and Hibernate provides ORM capabilities for seamless database interactions. Overall, Spring Boot enhances productivity,
+        while maintaining the power and flexibility of the Spring</p>
+
+    <div th:replace = "${content}"></div>
+</div>
+
+<div th:fragment="test(content)">
+    <div th:replace="${content}"></div>
+</div>
+
+<!--fragment has been done,   no w we will learn how to implement in other pages.-->
