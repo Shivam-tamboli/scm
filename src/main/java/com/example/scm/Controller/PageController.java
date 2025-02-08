@@ -3,6 +3,7 @@ package com.example.scm.Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class PageController {
@@ -17,6 +18,21 @@ public class PageController {
         return "home";//tell spring boot to show home.html .
     }
 
+//about route
 
+    @RequestMapping("/about")
+   public String aboutPage(Model model){
+        System.out.println("About page Controller:");
+        return "about";
+   }
+
+
+
+//services
+    @RequestMapping("/services")
+    public String servicesPage(Model model){
+        System.out.println("Service are about to run");
+        return "services";
+    }
 
 }
