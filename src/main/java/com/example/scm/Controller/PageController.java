@@ -22,6 +22,7 @@ public class PageController {
 
     @RequestMapping("/about")
    public String aboutPage(Model model){
+        model.addAttribute("isLogin", true);
         System.out.println("About page Controller:");
         return "about";
    }
