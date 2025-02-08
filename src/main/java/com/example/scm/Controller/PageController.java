@@ -11,10 +11,12 @@ public class PageController {
     public String home(Model model){// then this method will start executing and sending data to html page.
         System.out.println("Home page Controller");
         //Sending data to view.
-        model.addAttribute("name", "SubString Technologies" );
-        model.addAttribute("email", "shivamt12345@gmail.com");
-        model.addAttribute("password", 1234);
-        model.addAttribute("Githubrepo", "https://github.com/Shivam-tamboli?tab=overview&from=2025-02-01&to=2025-02-07");
+        model.addAttribute("name", "Substring Technologies");
+        model.addAttribute("youtubeChannel", "Shivam Tamboli");
+        model.addAttribute("githubRepo", "https://github.com/Shivam-tamboli/scm");
         return "home";//tell spring boot to show home.html .
     }
+
+
+
 }
